@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AuthorFame - Empowering Aspiring Authors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <style>
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+      .float-animation {
+        animation: float 3s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gradient-to-r from-purple-50 to-pink-50">
+    <header
+      class="bg-gradient-to-r from-purple-600 to-pink-500 text-white p-4 fixed w-full z-50"
+    >
+      <nav
+        class="container mx-auto flex flex-wrap justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold">AuthorFame</h1>
+        <button class="lg:hidden" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul
+          id="menu"
+          class="hidden w-full lg:flex lg:w-auto lg:space-x-4 mt-4 lg:mt-0"
+        >
+          <li>
+            <a href="#services" class="block py-2 hover:text-purple-200"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#ai-tool" class="block py-2 hover:text-purple-200"
+              >AI Tool</a
+            >
+          </li>
+          <li>
+            <a href="#pricing" class="block py-2 hover:text-purple-200"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a href="#testimonials" class="block py-2 hover:text-purple-200"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="block py-2 hover:text-purple-200">About</a>
+          </li>
+          <li>
+            <a href="#contact" class="block py-2 hover:text-purple-200"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="pt-16">
+      <section
+        id="hero"
+        class="bg-gradient-to-r from-purple-500 to-pink-400 text-white py-20"
+      >
+        <div
+          class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4"
+        >
+          <div class="w-full lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-right">
+            <h2 class="text-4xl font-bold mb-4">
+              Empower Your Writing Journey
+            </h2>
+            <p class="text-xl mb-8">Your Partner in Self-Publishing Success</p>
+            <a
+              href="#contact"
+              class="bg-white text-purple-500 px-6 py-3 rounded-full font-bold hover:bg-purple-100 transition duration-300"
+              >Get Started</a
+            >
+          </div>
+          <div class="w-full lg:w-1/2" data-aos="fade-left">
+            <img
+              src="https://www.clevergirlauthor.com/wp-content/uploads/2022/07/First-time-author.jpg"
+              alt="Author writing"
+              class="rounded-lg shadow-lg float-animation"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-gradient-to-br from-purple-100 to-pink-100 p-6 rounded-lg shadow-md"
+              data-aos="fade-up"
+            >
+              <i class="fas fa-book text-4xl text-purple-500 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">Publishing Support</h3>
+              <p>Step-by-step guidance through the self-publishing process.</p>
+            </div>
+            <div
+              class="bg-gradient-to-br from-purple-100 to-pink-100 p-6 rounded-lg shadow-md"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <i class="fas fa-edit text-4xl text-purple-500 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">Editing and Proofreading</h3>
+              <p>Various levels of editing services to polish your work.</p>
+            </div>
+            <div
+              class="bg-gradient-to-br from-purple-100 to-pink-100 p-6 rounded-lg shadow-md"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <i class="fas fa-paint-brush text-4xl text-purple-500 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">
+                Cover Design and Formatting
+              </h3>
+              <p>Custom cover design and comprehensive formatting services.</p>
+            </div>
+            <div
+              class="bg-gradient-to-br from-purple-100 to-pink-100 p-6 rounded-lg shadow-md"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <i class="fas fa-bullhorn text-4xl text-purple-500 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">Marketing Services</h3>
+              <p>Tailored marketing strategies to promote your book.</p>
+            </div>
+            <div
+              class="bg-gradient-to-br from-purple-100 to-pink-100 p-6 rounded-lg shadow-md"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <i
+                class="fas fa-chalkboard-teacher text-4xl text-purple-500 mb-4"
+              ></i>
+              <h3 class="text-xl font-bold mb-2">Consultation and Coaching</h3>
+              <p>One-on-one coaching sessions and group workshops.</p>
+            </div>
+            <div
+              class="bg-gradient-to-br from-purple-100 to-pink-100 p-6 rounded-lg shadow-md"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <i class="fas fa-print text-4xl text-purple-500 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">Print-on-Demand Services</h3>
+              <p>High-quality printing with global distribution options.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="ai-tool"
+        class="py-16 bg-gradient-to-r from-purple-100 to-pink-100"
+      >
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-12">
+            Our AI Writing Assistant
+          </h2>
+          <div class="flex flex-col lg:flex-row items-center justify-between">
+            <div class="w-full lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-right">
+              <h3 class="text-2xl font-bold mb-4">
+                Enhance Your Writing with AI
+              </h3>
+              <p class="mb-4">
+                Our AI-powered writing assistant helps you overcome writer's
+                block, improve your prose, and streamline your editing process.
+              </p>
+              <ul class="mb-6">
+                <li class="mb-2">
+                  <i class="fas fa-check text-green-500 mr-2"></i>Intelligent
+                  sentence completion
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check text-green-500 mr-2"></i>Style and tone
+                  suggestions
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check text-green-500 mr-2"></i>Grammar and
+                  punctuation checks
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check text-green-500 mr-2"></i>Plot and
+                  character development ideas
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="bg-purple-500 text-white px-6 py-3 rounded-full font-bold hover:bg-purple-600 transition duration-300"
+                >Try Our AI Tool</a
+              >
+            </div>
+            <div class="w-full lg:w-1/2" data-aos="fade-left">
+              <img
+                src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F170e4e50-7812-4f97-8ae3-d7308dc7d718_1024x1024.webp"
+                alt="AI Writing Assistant"
+                class="rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-12">Pricing Plans</h2>
+          <div class="flex flex-wrap justify-center gap-8">
+            <div
+              class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-lg shadow-lg w-full md:w-2/5 lg:w-1/3"
+              data-aos="flip-left"
+            >
+              <h3 class="text-2xl font-bold mb-4">Basic Package</h3>
+              <p class="text-gray-600 mb-6">
+                Essential publishing support and basic editing
+              </p>
+              <ul class="mb-6">
+                <li class="mb-2">
+                  <i class="fas fa-check text-green-500 mr-2"></i>Publishing
+                  guidance
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check text-green-500 mr-2"></i>Basic
+                  proofreading
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check text-green-500 mr-2"></i>Standard cover
+                  design
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check text-green-500 mr-2"></i>Limited access
+                  to AI tool
+                </li>
+              </ul>
+              <p class="text-2xl font-bold mb-6">$499</p>
+              <a
+                href="#contact"
+                class="block text-center bg-purple-500 text-white px-6 py-3 rounded-full font-bold hover:bg-purple-600 transition duration-300"
+                >Get Started</a
+              >
+            </div>
+            <div
+              class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-lg shadow-lg w-full md:w-2/5 lg:w-1/3"
+              data-aos="flip-left"
+              data-aos-delay="200"
+            >
+              <h3 class="text-2xl font-bold mb-4">Premium Package</h3>
+              <p class="text-gray-600 mb-6">
+                Comprehensive services including marketing
+              </p>
+              <ul class="mb-6">
+                <li class="mb-2">
+                  <i class="fas fa-check text-green-500 mr-2"></i>All Basic
+                  Package features
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check text-green-500 mr-2"></i>Advanced
+                  editing
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check text-green-500 mr-2"></i>Custom cover
+                  design
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check text-green-500 mr-2"></i>Marketing
+                  strategy
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check text-green-500 mr-2"></i>Full access to
+                  AI tool
+                </li>
+              </ul>
+              <p class="text-2xl font-bold mb-6">$999</p>
+              <a
+                href="#contact"
+                class="block text-center bg-purple-500 text-white px-6 py-3 rounded-full font-bold hover:bg-purple-600 transition duration-300"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="testimonials"
+        class="py-16 bg-gradient-to-r from-purple-100 to-pink-100"
+      >
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-12">
+            What Our Authors Say
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+              <p class="mb-4">
+                "AuthorFame transformed my writing journey. Their support and AI
+                tool helped me finish my novel in record time!"
+              </p>
+              <p class="font-bold">- Sarah J., Fantasy Author</p>
+            </div>
+            <div
+              class="bg-white p-6 rounded-lg shadow-md"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <p class="mb-4">
+                "The editing services are top-notch. My book wouldn't be half as
+                good without their expert guidance."
+              </p>
+              <p class="font-bold">- Michael R., Mystery Writer</p>
+            </div>
+            <div
+              class="bg-white p-6 rounded-lg shadow-md"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <p class="mb-4">
+                "From cover design to marketing, AuthorFame provided everything
+                I needed to launch my successful self-publishing career."
+              </p>
+              <p class="font-bold">- Emily T., Romance Novelist</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-16 bg-white">
+        <div
+          class="container mx-auto flex flex-col lg:flex-row items-center px-4"
+        >
+          <div class="w-full lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-right">
+            <img
+              src="https://lh7-us.googleusercontent.com/6lxYuex-qA1V0YHk4NBJ2ZuBXuGpM91hJ5d0gmpl18Ii3qzGIww_tJCAYLXeDn6NKke2uOjnCRWVCGqLIhj8XxsMffEbl3cgX5vwb8pATAbOPgvub_dc_uxQHVwOqDkk55f_iwps_4TX4QSTWzkeWA"
+              alt="Team of editors"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+          <div class="w-full lg:w-1/2 lg:pl-12" data-aos="fade-left">
+            <h2 class="text-3xl font-bold mb-8">About AuthorFame</h2>
+            <p class="mb-4">
+              AuthorFame is dedicated to empowering aspiring authors by
+              providing comprehensive self-publishing services, fostering a
+              supportive community, and ensuring the highest quality in editing,
+              design, and marketing.
+            </p>
+            <p>
+              Our vision is to become the leading self-publishing platform that
+              transforms passionate writers into successful authors, leveraging
+              cutting-edge AI technology and industry expertise.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="py-16 bg-gradient-to-r from-purple-100 to-pink-100"
+      >
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+          <form class="max-w-lg mx-auto" data-aos="zoom-in">
+            <div class="mb-4">
+              <label for="name" class="block mb-2">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full p-2 border rounded"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block mb-2">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full p-2 border rounded"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block mb-2">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full p-2 border rounded"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="bg-purple-500 text-white px-6 py-3 rounded-full font-bold hover:bg-purple-600 transition duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-gradient-to-r from-purple-600 to-pink-500 text-white py-8"
+    >
+      <div class="container mx-auto text-center px-4">
+        <p>&copy; 2024 AuthorFame. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
